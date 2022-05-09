@@ -1,0 +1,6 @@
+/*
+* We don't use "@tailwind base;" so it doesn't collide with Antd Base Styling
+*/
+
+@tailwind components;
+@tailwind utilities;
