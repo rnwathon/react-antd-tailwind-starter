@@ -1,4 +1,4 @@
-import { AppstoreOutlined, DashboardOutlined } from '@ant-design/icons';
+import { DashboardOutlined } from '@ant-design/icons';
 
 const getMenuData = () => [
   {
@@ -6,14 +6,6 @@ const getMenuData = () => [
     key: '/',
     path: '/',
     icon: <DashboardOutlined />,
-    hidden: false,
-    disabled: false,
-  },
-  {
-    title: 'Components',
-    key: '/components',
-    path: '/components',
-    icon: <AppstoreOutlined />,
     hidden: false,
     disabled: false,
   },
