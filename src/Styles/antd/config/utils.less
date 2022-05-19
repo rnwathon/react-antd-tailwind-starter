@@ -1,0 +1,62 @@
+// Additional Utilities
+// ---
+
+// Semantic utilities
+// for Primary, Success, Error, Info, Warning
+@semantic-state: primary, success, error, info, warning;
+
+.make-semantic-util-classes(@i: length(@semantic-state)) when (@i > 0) {
+  .make-semantic-util-classes(@i - 1);
+
+  @state: extract(@semantic-state, @i);
+  @color: '@{state}-color';
+
+  .bg-@{state} {
+    background-color: @@color;
+  }
+  .text-@{state} {
+    color: @@color;
+  }
+  .border-@{state} {
+    border-color: @@color;
+  }
+}
+
+.make-semantic-util-classes();
+
+// Color utilities
+.make-color-util-classes(@colorName, @i: 1) when (@i <= 10) {
+  .make-color-util-classes(@colorName, @i + 1);
+
+  @color: '@{colorName}-@{i}';
+
+  .bg-@{colorName}-@{i} {
+    background: @@color;
+  }
+  .text-@{colorName}-@{i} {
+    color: @@color;
+  }
+  .border-@{colorName}-@{i} {
+    border-color: @@color;
+  }
+}
+
+.make-color-util-classes(red);
+.make-color-util-classes(volcano);
+.make-color-util-classes(orange);
+.make-color-util-classes(gold);
+.make-color-util-classes(yellow);
+.make-color-util-classes(lime);
+.make-color-util-classes(green);
+.make-color-util-classes(emerald);
+.make-color-util-classes(teal);
+.make-color-util-classes(cyan);
+.make-color-util-classes(blue);
+.make-color-util-classes(geekblue);
+.make-color-util-classes(indigo);
+.make-color-util-classes(violet);
+.make-color-util-classes(purple);
+.make-color-util-classes(fuchsia);
+.make-color-util-classes(pink);
+.make-color-util-classes(rose);
+// ---
