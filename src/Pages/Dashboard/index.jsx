@@ -4,6 +4,7 @@ import { ArrowDownOutlined, ArrowUpOutlined, LikeOutlined } from '@ant-design/ic
 
 // Sections
 import Typograhies from './Typograhies';
+import Colors from './Colors';
 
 const Dashboard = () => (
   <Row gutter={[16, 16]}>
@@ -40,6 +41,9 @@ const Dashboard = () => (
       <Card>
         <Statistic title="Unmerged" value={93} suffix="/ 100" />
       </Card>
+    </Col>
+    <Col span={24}>
+      <Colors />
     </Col>
     <Col span={24}>
       <Typograhies />
