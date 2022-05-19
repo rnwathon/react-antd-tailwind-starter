@@ -12,12 +12,12 @@
 
 // -------- Colors -----------
 // >>> Primary
-@primary-color: @blue-6;
+@primary-color: @geekblue-6;
 @primary-color-hover: color(~`colorPalette('@{primary-color}', 5) `);
 @primary-color-active: color(~`colorPalette('@{primary-color}', 7) `);
 @primary-color-outline: fade(@primary-color, @outline-fade);
 
-@processing-color: @blue-6;
+@processing-color: @primary-color;
 
 // >>> Info
 @info-color: @primary-color;
@@ -41,7 +41,7 @@
 @warning-color-deprecated-border: color(~`colorPalette('@{warning-color}', 3) `);
 
 // >>> Error
-@error-color: @red-6;
+@error-color: @rose-6;
 @error-color-hover: color(~`colorPalette('@{error-color}', 5) `);
 @error-color-active: color(~`colorPalette('@{error-color}', 7) `);
 @error-color-outline: fade(@error-color, @outline-fade);
