@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.2.1",
     "antd": "^4.20.2",
     "autoprefixer": "^10.4.7",
+    "clsx": "^1.1.1",
     "craco-less": "^2.0.0",
     "postcss": "^8.4.13",
     "react": "^18.1.0",
