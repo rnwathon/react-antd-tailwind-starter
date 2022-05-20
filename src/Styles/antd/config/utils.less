@@ -1,8 +1,13 @@
 // Additional Utilities
 // ---
 
-// Semantic utilities
-// for Primary, Success, Error, Info, Warning
+
+// =============================================
+//  Colors
+// =============================================
+
+/* Semantic utilities
+ * for Primary, Success, Error, Info, Warning */
 @semantic-state: primary, success, error, info, warning;
 
 .make-semantic-util-classes(@i: length(@semantic-state)) when (@i > 0) {
@@ -24,7 +29,7 @@
 
 .make-semantic-util-classes();
 
-// Color utilities
+/* Color pallete utilities */
 .make-color-util-classes(@colorName, @i: 1) when (@i <= 10) {
   .make-color-util-classes(@colorName, @i + 1);
 
@@ -59,4 +64,19 @@
 .make-color-util-classes(fuchsia);
 .make-color-util-classes(pink);
 .make-color-util-classes(rose);
-// ---
+
+
+// =============================================
+//  Scrollbar
+// =============================================
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
