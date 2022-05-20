@@ -1,8 +1,17 @@
 module.exports = {
+  darkMode: 'class',
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
       colors: {
+        header: {
+          light: '#ffffff',
+          dark: '#1f1f1f',
+        },
+        sidebar: {
+          light: '#ffffff',
+          dark: '#141414',
+        },
         red: {
           50: '#fff2f0',
           100: '#ffd5cf',
