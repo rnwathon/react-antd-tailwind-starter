@@ -13,8 +13,8 @@ const LayoutProvider = ({ children }) => {
   return (
     <LayoutContext.Provider
       value={React.useMemo(
-        () => ({ isSidebarCollapsed, toggleSidebar }),
-        [isSidebarCollapsed, toggleSidebar]
+        () => ({ isSidebarCollapsed, setIsSidebarCollapsed, toggleSidebar }),
+        [isSidebarCollapsed, setIsSidebarCollapsed, toggleSidebar]
       )}
     >
       <Layout className="min-h-screen">{children}</Layout>
@@ -25,9 +25,10 @@ const LayoutProvider = ({ children }) => {
 // === HOOKS === //
 
 export const useSidebarCollapse = () => {
-  const { isSidebarCollapsed, toggleSidebar } = React.useContext(LayoutContext);
+  const { isSidebarCollapsed, setIsSidebarCollapsed, toggleSidebar } =
+    React.useContext(LayoutContext);
 
-  return { isSidebarCollapsed, toggleSidebar };
+  return { isSidebarCollapsed, setIsSidebarCollapsed, toggleSidebar };
 };
 
 export default LayoutProvider;
