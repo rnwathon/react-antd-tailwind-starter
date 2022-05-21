@@ -1,10 +1,12 @@
-<center>
-  <img src="src/Assets/SVG/logo.svg" width="150">
 
-  <h1> React Antd Tailwind Starter </h1>
+<p align="center">
+  <img src="src/Assets/SVG/logoWord.svg" width="150">
+</p>
 
-  <p> An opinionated create-react-app with Ant Design and Tailwindcss</p>
-</center>
+<h1 align="center"> React Antd Tailwind Starter </h1>
+
+<p align="center"> An opinionated create-react-app with Ant Design and Tailwindcss</p>
+
 
 ```bash
 git clone https://github.com/rnwathon/react-antd-tailwind-starter.git project-name
