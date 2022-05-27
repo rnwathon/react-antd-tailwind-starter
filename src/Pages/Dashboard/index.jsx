@@ -8,7 +8,7 @@ import Colors from './Colors';
 
 const Dashboard = () => (
   <Row gutter={[16, 16]}>
-    <Col span={6}>
+    <Col xs={24} md={12} xxl={6}>
       <Card>
         <Statistic
           title="Active"
@@ -20,7 +20,7 @@ const Dashboard = () => (
         />
       </Card>
     </Col>
-    <Col span={6}>
+    <Col xs={24} md={12} xxl={6}>
       <Card>
         <Statistic
           title="Idle"
@@ -32,12 +32,12 @@ const Dashboard = () => (
         />
       </Card>
     </Col>
-    <Col span={6}>
+    <Col xs={24} md={12} xxl={6}>
       <Card>
         <Statistic title="Feedback" value={1128} prefix={<LikeOutlined />} />
       </Card>
     </Col>
-    <Col span={6}>
+    <Col xs={24} md={12} xxl={6}>
       <Card>
         <Statistic title="Unmerged" value={93} suffix="/ 100" />
       </Card>
