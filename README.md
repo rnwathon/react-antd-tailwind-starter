@@ -5,7 +5,13 @@
 
 <h1 align="center"> React Antd Tailwind Starter </h1>
 
-<p align="center"> An opinionated create-react-app with Ant Design and Tailwindcss</p>
+<p align="center"> An opinionated boilerplate create-react-app with Ant Design and Tailwindcss</p>
+
+<p>
+  <img src="./src/Assets/img/mode-light.webp" width="49.5%" style="float: left;" />
+  <img src="./src/Assets/img/mode-dark.webp" width="49.5%" style="float: right;" />
+  <div style="clear: both;"></div>
+</p>
 
 
 ```bash
@@ -38,4 +44,5 @@ yarn start
     ├── Pages          # For pages inside of the app
     ├── Routes         # For route list or custom route component
     ├── Styles         # For antd and tailwind style file
+    ├── Utils          # For custom utility functions
     └── ...
